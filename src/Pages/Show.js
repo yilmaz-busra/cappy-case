@@ -4,15 +4,14 @@ import { Link } from "react-router-dom";
 function Show() {
   return (
     <div>
-      <div className="duzen1">
+      <div className="">
         <Link to="/End">
-          <img className="mikros " src="mikro.png" alt="mikroskop" />
+          <img className="mikros " src="incele.png" alt="mikroskop" />
         </Link>
-        <span>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis,
-          quos quasi? Enim at, alias sequi expedita magnam eos libero sit
-          aliquid nihil quia esse inventore tempor.
-        </span>
+        <div>
+          İşte senin için bir mikroskop! Lezzet ve vitamin dolu yararlı bir
+          canavar olduğumu anlayabilmek için içerik listemi oluşturuyorum.
+        </div>
       </div>
     </div>
   );
