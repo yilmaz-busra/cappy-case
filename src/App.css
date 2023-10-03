@@ -1,38 +1,91 @@
 * {
-  margin: 0;
-  padding: 0;
-  background: #fdc830; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    #f37335,
-    #fdc830
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to right,
-    #f37335,
-    #fdc830
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	margin: 0;
+	padding: 0;
+}
+body {
+	background: linear-gradient(
+		to right,
+		#f37335,
+		#fdc830
+	); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.img-container {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .cappymons {
-  width: 100%;
+	width: 100%;
 }
 .mikros {
-  width: 100%;
+	width: 100%;
+}
+
+.cappyorgan:hover {
+	transform: scale(1.2);
+	transition: 0.5s;
 }
 .cappyorgan {
-  width: 100%;
+	width: 100%;
 }
 .sharecappy {
-  width: 100%;
+	width: 100%;
 }
 .style {
-  align-items: center;
-  display: flex;
-  justify-content: center;
+	display: flex;
+	align-items: center;
+
+	justify-content: center;
+	column-gap: 6px; /*butonlar arasında boşluk bırakmak için column-gap kullanıldı*/
+}
+
+.style > button {
 }
 
 .btnstyle {
-  margin-top: 25px;
-  width: 100px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: transparent;
+	padding: 4px;
+	border: 1px solid white;
+	border-radius: 25px;
+	margin-top: 25px;
+	width: 100px;
+	color: white;
+	text-decoration: none;
+}
+.textContentStyle {
+	color: white;
+	font-size: 16px;
+	font-weight: medium;
+}
+.head {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 10px;
+	color: green;
+	font-weight: bold;
+	font-size: 24px;
+}
+@media screen and (min-width: 768px) {
+	.cappymons {
+		width: 40%;
+	}
+
+	.mikros {
+		width: 40%;
+	}
+
+	.cappyorgan {
+		width: 40%;
+	}
+
+	.sharecappy {
+		width: 40%;
+	}
 }

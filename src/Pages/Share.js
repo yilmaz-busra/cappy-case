@@ -1,23 +1,27 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { BsInstagram } from "react-icons/bs";
+import { BsInstagram, BsTwitter, BsFacebook } from "react-icons/bs";
 function Share() {
   return (
     <div>
       <div>
-        <Link>
+        <Link className="img-container">
           <img className="sharecappy" src="share1.png" alt="sharewithcappy" />
         </Link>
-        <p>
+        <p className="textContentStyle">
           Hadi sen de şanslı Cappyler arasında yerini almak için bize katıl!
         </p>
       </div>
       <div className="style">
-        <button className="btnstyle">Twitter</button>
-        <button className="btnstyle">
+        <Link className="btnstyle">
+          <BsTwitter />
+        </Link>
+        <Link className="btnstyle">
           <BsInstagram />
-        </button>
-        <button className="btnstyle">Facebook</button>
+        </Link>
+        <Link className="btnstyle">
+          <BsFacebook />
+        </Link>
       </div>
     </div>
   );
